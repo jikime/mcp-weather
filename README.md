@@ -31,12 +31,12 @@ OPEN_DATA_API_KEY=your_api_key_here
 
 ## 실행 방법
 
-### MCP 서버를 실행하려면 다음과 같이 실행합니다.
+#### MCP 서버를 실행하려면 다음과 같이 실행합니다.
 ```bash
 mcp dev ko_weather.py
 ```
 
-### 또한, Claude Desktop 환경에서 실행하려면 다음 명령어를 사용할 수 있습니다.
+#### 또한, Claude Desktop 환경에서 실행하려면 다음 명령어를 사용할 수 있습니다.
 ```
 mcp install ko_weather.py
 ```
