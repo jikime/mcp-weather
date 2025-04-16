@@ -3,7 +3,7 @@
 한국 날씨 정보를 확인할 수 있는 MCP Server입니다.
 
 
-## 설치 방법 (Mac)
+## 설치 방법 (MacOS)
 
 1. 저장소를 클론합니다:
 ```bash
@@ -13,7 +13,7 @@ cd mcp-weather
 
 2. 필요한 패키지를 설치합니다:
 ```bash
-pip install uv
+curl -LsSf https://astral.sh/uv/install.sh | sh
 uv venv
 source .venv/bin/activate
 uv add "mcp[cli]"
@@ -41,7 +41,7 @@ mcp dev ko_weather.py
 mcp install ko_weather.py
 ```
 
-#### Claude Desktop 설정 확인 및 편집 (MAC)
+#### Claude Desktop 설정 확인 및 편집 (MacOS)
 - command : which uv 하여 절대 경로를 변경합니다.
 - directory : mcp-weather 가 설치된 절대 경로로 변경합니다.
 ```
@@ -55,7 +55,7 @@ vi ~/Library/Application\ Support/Claude/claude_desktop_config.json
         "--directory",
         "/Users/Dev/mcp/mcp-weather",
         "run",
-        "ko_weather.py"
+        "src/server.py"
       ]
     }
   }

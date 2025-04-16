@@ -6,6 +6,7 @@ mcp = FastMCP("Korea Weather")
 
 LOCATION_API_BASE = "http://localhost:8888/api/v1"
 
+@mcp.prompt()
 def format_location(location: dict) -> str:
     """Format an alert feature into a readable string."""
     return f"""
